@@ -5,7 +5,7 @@ public class Main{
         BankAccount b1 = new BankAccount(100.00,"abc123","gates");
         BankAccount b2 = new BankAccount(500.00,"xyz789","woods");
 
-        // Operate on b1
+        // Operate on b1)
         System.out.println(b1.getAccountBalance());
         b1.makeWithdraw(5.00);
         System.out.println(b1.getAccountNumber());

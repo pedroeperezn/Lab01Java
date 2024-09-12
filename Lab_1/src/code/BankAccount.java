@@ -45,7 +45,7 @@ class BankAccount
     }
 
     /**
-     * Get last name of the account's owner
+     * Get last name of the account's owneræ
      * @return member last name
      */
     public String getMemberLastName()

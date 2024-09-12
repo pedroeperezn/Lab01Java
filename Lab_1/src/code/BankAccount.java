@@ -1,11 +1,11 @@
 /**
  * This class models a BankAccount
- * @author alanbatrez
+ * @author alanbatrez & pedroeperezn
  * @version 1.0
  */
 class BankAccount
 {
-    private double balance;
+    private double balanceCAD;
     private final String accountNumber;
     private String memberLastName;
 
@@ -21,10 +21,36 @@ class BankAccount
                   String memberLastName)
 
     {
-        this.balance =        balance;
+        this.balanceCAD =     balance;
         this.accountNumber =  accountNumber;
         this.memberLastName = memberLastName;
+    }
 
+    /**
+     * Gets current balance on account
+     * @return balance on account
+     */
+    public double getAccountBalance()
+    {
+        return balanceCAD;
+    }
+
+    /**
+     * Gets account number of account
+     * @return account number
+     */
+    public String getAccountNumber()
+    {
+        return accountNumber;
+    }
+
+    /**
+     * Get last name of the account's owner
+     * @return member last name
+     */
+    public String getMemberLastName()
+    {
+        return memberLastName;
     }
 
     /**
@@ -32,10 +58,9 @@ class BankAccount
      * @param amount The amount with data type double
      * @return Returns the result of the operation between this.balance - amount
      */
-    public double makeWithdraw(double amount)
+    public void makeWithdraw(double amount)
     {
-        System.out.println("Withdrawing " + amount + " from account " + accountNumber);
-        return this.balance = this.balance- amount;
+        this.balanceCAD = this.balanceCAD - amount;
     }
 
     /**
@@ -43,9 +68,20 @@ class BankAccount
      * @param amount The amount with data type double
      * @return Returns the result of the operation between this.balance + amount
      */
-    public double makeDeposit(double amount){
-        System.out.println("Depositing " + amount + " from account " + accountNumber);
-        return this.balance = this.balance + amount;
+    public void makeDeposit(double amount)
+    {
+        this.balanceCAD = this.balanceCAD + amount;
+    }
+
+    /**
+     * Transfer funds from one account to another
+     * @param amount amount of CAD to transfer
+     * @param recipient bank account that will receive the transfer
+     */
+    public void makeTransfer(double amount, BankAccount recipient)
+    {
+        this.balanceCAD = this.balanceCAD - amount;
+        recipient.makeDeposit(amount);
     }
 
 }

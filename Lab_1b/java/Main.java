@@ -6,6 +6,7 @@
         Student s2 = new Student("Bill Gates", "October 28, 1955", "A00987654",false);
 
         // Displaying information
+        System.out.println(s1.getName());
 
 
 

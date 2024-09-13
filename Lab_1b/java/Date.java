@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Represents a date with YY-MM-DDDD
  * @author Alan Riveros & Pedro E. Perez
  * @version 1.0

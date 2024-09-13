@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Stores the name of a person
  * @author Alan Riveros & Pedro E. Perez
  * @version 1.0

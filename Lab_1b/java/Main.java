@@ -28,6 +28,7 @@ public class Main {
         System.out.println(s2.getDateOfBirth());
         System.out.println(s2.isGraduated());
 
+        System.out.println(s2.getFormattedText());
 
 
 

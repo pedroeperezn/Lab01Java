@@ -27,10 +27,12 @@ public class Student
 
     /**
      * Method that is used to get the name of the Student
+     * @return Return the name of the student
      */
     public String getName(){return name;}
     /**
      * Method that is used to get the student number of the Student
+     * @return Return the student number
      */
     public String getStudentNumber()
     {
@@ -39,6 +41,7 @@ public class Student
 
     /**
      * Method that is used to get the date of birth of the Student
+     * @return Return the date of birth of the student
      */
     public String getDateOfBirth()
     {
@@ -47,6 +50,7 @@ public class Student
 
     /**
      * Method that is used to verify if the Student is graduated or not
+     * @return Return if the student is graduated or not
      */
     public String isGraduated()
     {
@@ -58,6 +62,15 @@ public class Student
         {
             return "The student has graduated";
         }
+    }
+
+    /**
+     * Method to get formatted information
+     * @return Return the name, student number, date of birth and if the student is graduated or not
+     */
+    public String getFormattedText()
+    {
+        return getName() + " "+ getStudentNumber() + " " + getDateOfBirth()+" " + isGraduated();
     }
 }
 

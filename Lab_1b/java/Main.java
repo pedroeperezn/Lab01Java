@@ -15,16 +15,20 @@ public class Main {
         Student s2 = new Student(new Name("Bill", "Gates"), "A00987654", new Date("1955","10","28"),false);
 
         //======================================================
+        // Displaying information for s1 object
         System.out.print(s1.getName().getFullName() + " ");
         System.out.print("(" + s1.getName().getInitials() + ")" + " ");
-        // TODO: Print student number and was born on
-        System.out.print(s1.getDateOfBirth().getYyMmDd() + " ");
+        System.out.print("(st # "+ s1.getStudentNumber()+")");
+        System.out.print(" was born on "+ s1.getDateOfBirth().getYyMmDd() + ". ");
         System.out.println(s1.isGraduated());
 
+        //=======================================================
+        // Displaying information for s2 object
         System.out.print(s2.getName().getFullName() + " ");
-
-
-
+        System.out.print("(" + s2.getName().getInitials() + ")" + " ");
+        System.out.print("(st # "+ s2.getStudentNumber()+")"+" ");
+        System.out.print("was born on " + s2.getDateOfBirth().getYyMmDd() + ". ");
+        System.out.println(s2.isGraduated());
 
     }
 }

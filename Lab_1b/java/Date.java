@@ -17,9 +17,9 @@ public class Date
      */
     Date(String year, String month, String day)
     {
-        this.year = year;
+        this.year =  year;
         this.month = month;
-        this.day = day;
+        this.day =   day;
     }
 
     /**

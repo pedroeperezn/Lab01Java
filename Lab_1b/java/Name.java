@@ -16,17 +16,14 @@ public class Name
     Name(String first, String last)
     {
         this.first = first;
-        this.last = last;
+        this.last =  last;
     }
 
     /**
      * Returns the stored first name
      * @return name (string)
      */
-    String getFirstName()
-    {
-        return this.first;
-    }
+    String getFirstName() { return this.first; }
 
     /**
      * Returns the stored last name

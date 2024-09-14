@@ -5,17 +5,17 @@
  */
 public class Student
 {
-    private final Name  name;
+    private final Name    name;
     private final String  studentNumber;
-    private final Date  dateOfBirth;
-    private boolean graduated;
+    private final Date    dateOfBirth;
+    private boolean       graduated;
 
     /**
      * The constructor for class Student
-     * @param name The name of the Student
-     * @param studentNumber The student number of the Student
-     * @param dateOfBirth The date of birth of the Student
-     * @param graduated The status of the Student if is graduated or not
+     * @param name          The name of the student using Name class
+     * @param studentNumber The student number of the student
+     * @param dateOfBirth   The date of birth of the student using Date class
+     * @param graduated     The status of the student if is graduated or not
      */
     Student(Name name,String studentNumber,Date dateOfBirth,boolean graduated)
     {
@@ -26,7 +26,7 @@ public class Student
     }
 
     /**
-     * Method that is used to get the name of the Student
+     * Method that is used to get the name of the student using Name class
      * @return Return the name of the student
      */
     public Name getName()
@@ -35,7 +35,7 @@ public class Student
     }
 
     /**
-     * Method that is used to get the student number of the Student
+     * Method that is used to get the student number of the student
      * @return Return the student number
      */
     public String getStudentNumber()
@@ -45,8 +45,8 @@ public class Student
 
 
     /**
-     * Method that is used to get the date of birth of the Student
-     * @return Return the date of birth of the student
+     * Method that is used to get the date of birth of the student using Date class
+     * @return Return date of birth of the student
      */
     public Date getDateOfBirth()
     {
@@ -67,15 +67,6 @@ public class Student
         {
             return "The student has graduated.";
         }
-    }
-
-    /**
-     * Method to get formatted information
-     * @return Return the name, student number, date of birth and if the student is graduated or not
-     */
-    public String getFormattedText()
-    {
-        return getName() + "("+ getStudentNumber() + ")"+" " + getDateOfBirth()+" " + isGraduated();
     }
 }
 

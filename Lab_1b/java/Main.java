@@ -15,18 +15,18 @@ public class Main {
         Student s2 = new Student("Bill Gates", "A00987654", "October 28, 1955",false);
 
         // Displaying s1 information
-        s1.getName();
-        s1.getStudentNumber();
-        s1.getDateOfBirth();
-        s1.isGraduated();
+        System.out.println(s1.getName());
+        System.out.println(s1.getStudentNumber());
+        System.out.println(s1.getDateOfBirth());
+        System.out.println(s1.isGraduated());
 
         System.out.println(" ");
 
         // Displaying s2 information
-        s2.getName();
-        s2.getStudentNumber();
-        s2.getDateOfBirth();
-        s2.isGraduated();
+        System.out.println(s2.getName());
+        System.out.println(s2.getStudentNumber());
+        System.out.println(s2.getDateOfBirth());
+        System.out.println(s2.isGraduated());
 
 
 

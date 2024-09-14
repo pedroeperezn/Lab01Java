@@ -5,9 +5,9 @@
  */
 public class Student
 {
-    String name;
-    String studentNumber;
-    String dateOfBirth;
+    String  name;
+    String  studentNumber;
+    String  dateOfBirth;
     boolean graduated;
 
     /**
@@ -19,49 +19,45 @@ public class Student
      */
     Student(String name,String studentNumber,String dateOfBirth,boolean graduated)
     {
-        this.name = name;
+        this.name =          name;
         this.studentNumber = studentNumber;
-        this.dateOfBirth = dateOfBirth;
-        this.graduated = graduated;
+        this.dateOfBirth =   dateOfBirth;
+        this.graduated =     graduated;
     }
 
     /**
      * Method that is used to get the name of the Student
      */
-    public void getName()
-    {
-        System.out.println(this.name);
-    }
-
+    public String getName(){return name;}
     /**
      * Method that is used to get the student number of the Student
      */
-    public void getStudentNumber()
+    public String getStudentNumber()
     {
-        System.out.println("st #" + this.studentNumber);
+        return "st #" + this.studentNumber;
     }
 
     /**
      * Method that is used to get the date of birth of the Student
      */
-    public void getDateOfBirth() {
-        System.out.println("was born on " + this.dateOfBirth);
+    public String getDateOfBirth()
+    {
+        return "was born on " + this.dateOfBirth;
     }
 
     /**
      * Method that is used to verify if the Student is graduated or not
      */
-    public void isGraduated()
+    public String isGraduated()
     {
         if(!this.graduated)
         {
-            System.out.println("The student has not graduated.");
+            return "The student has not graduated";
         }
         else
         {
-            System.out.println("The student has graduated.");
+            return "The student has graduated";
         }
     }
-
 }
 

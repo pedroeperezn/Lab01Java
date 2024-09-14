@@ -11,25 +11,17 @@ public class Main {
     public static void main(String[] args)
     {
         // Initialize 2 objects into class Student
-        Student s1 = new Student("Tiger Woods","A00123456","December 30, 1975",true);
-        Student s2 = new Student("Bill Gates", "A00987654", "October 28, 1955",false);
+        Student s1 = new Student(new Name("Tiger", "Woods"),"A00123456",new Date("1975","12","30"),true);
+        Student s2 = new Student(new Name("Bill", "Gates"), "A00987654", new Date("1955","10","28"),false);
 
-        // Displaying s1 information
-        System.out.println(s1.getName());
-        System.out.println(s1.getStudentNumber());
-        System.out.println(s1.getDateOfBirth());
+        //======================================================
+        System.out.print(s1.getName().getFullName() + " ");
+        System.out.print("(" + s1.getName().getInitials() + ")" + " ");
+        // TODO: Print student number and was born on
+        System.out.print(s1.getDateOfBirth().getYyMmDd() + " ");
         System.out.println(s1.isGraduated());
 
-        System.out.println(" ");
-
-        // Displaying s2 information
-        System.out.println(s2.getName());
-        System.out.println(s2.getStudentNumber());
-        System.out.println(s2.getDateOfBirth());
-        System.out.println(s2.isGraduated());
-
-        System.out.println(s2.getFormattedText());
-
+        System.out.print(s2.getName().getFullName() + " ");
 
 
 

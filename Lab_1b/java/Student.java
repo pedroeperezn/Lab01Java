@@ -5,10 +5,10 @@
  */
 public class Student
 {
-    String  name;
-    String  studentNumber;
-    String  dateOfBirth;
-    boolean graduated;
+    private final Name  name;
+    private final String  studentNumber;
+    private final Date  dateOfBirth;
+    private boolean graduated;
 
     /**
      * The constructor for class Student
@@ -17,7 +17,7 @@ public class Student
      * @param dateOfBirth The date of birth of the Student
      * @param graduated The status of the Student if is graduated or not
      */
-    Student(String name,String studentNumber,String dateOfBirth,boolean graduated)
+    Student(Name name,String studentNumber,Date dateOfBirth,boolean graduated)
     {
         this.name =          name;
         this.studentNumber = studentNumber;
@@ -29,23 +29,28 @@ public class Student
      * Method that is used to get the name of the Student
      * @return Return the name of the student
      */
-    public String getName(){return name;}
+    public Name getName()
+    {
+        return this.name;
+    }
+
     /**
      * Method that is used to get the student number of the Student
      * @return Return the student number
      */
     public String getStudentNumber()
     {
-        return "st # "+ this.studentNumber;
+        return this.studentNumber;
     }
+
 
     /**
      * Method that is used to get the date of birth of the Student
      * @return Return the date of birth of the student
      */
-    public String getDateOfBirth()
+    public Date getDateOfBirth()
     {
-        return "was born on " + this.dateOfBirth;
+        return this.dateOfBirth;
     }
 
     /**

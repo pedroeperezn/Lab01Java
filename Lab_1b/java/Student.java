@@ -36,7 +36,7 @@ public class Student
      */
     public String getStudentNumber()
     {
-        return "st #" + this.studentNumber;
+        return "st # "+ this.studentNumber;
     }
 
     /**
@@ -56,11 +56,11 @@ public class Student
     {
         if(!this.graduated)
         {
-            return "The student has not graduated";
+            return "The student has not graduated.";
         }
         else
         {
-            return "The student has graduated";
+            return "The student has graduated.";
         }
     }
 
@@ -70,7 +70,7 @@ public class Student
      */
     public String getFormattedText()
     {
-        return getName() + " "+ getStudentNumber() + " " + getDateOfBirth()+" " + isGraduated();
+        return getName() + "("+ getStudentNumber() + ")"+" " + getDateOfBirth()+" " + isGraduated();
     }
 }
 
